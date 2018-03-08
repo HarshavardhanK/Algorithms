@@ -17,7 +17,7 @@ string naive_autocorrect(string word) {
     
     string path = "/Users/HarshavardhanK/Desktop/Code Files/Sublime/C++/Dict.txt";
     
-   // string dic[] = {"act", "Hello", "Hey", "Hola", "Help", "Apple", "America", "Banana", "Breakfast", "fuck"};
+    string dic[] = {"act", "Hello", "Hey", "Hola", "Help", "Apple", "America", "Banana", "Breakfast", "fuck"};
     
     vector<string> naive_vect;
     
@@ -31,10 +31,10 @@ string naive_autocorrect(string word) {
     
     if(!dictionary_file) {
         cout << "File empty, or doesnt exist\n";
-        return;
+        exit(0);
     }
     
-    string word;
+    //string word;
     
     while(!dictionary_file.eof()) {
         dictionary_file >> word;
