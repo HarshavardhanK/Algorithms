@@ -1,7 +1,9 @@
 #include <iostream>
+#include "Trie.hpp"
 using namespace std;
 
 int main() {
-  cout << "Hello, world!\n";
-  return 0;
+
+    test_trie();
+
 }

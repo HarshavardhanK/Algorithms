@@ -27,14 +27,14 @@ class BinaryTree {
 public:
     
     BinaryTree() {
-        root = nullptr;
-        root->left = root->right = nullptr;
+        root = NULL;
+        root->left = root->right = NULL;
     }
     
     void insert(T data) {
         BinaryTreeNode<T> child = root;
         
-        if(root == nullptr) {
+        if(root == NULL) {
             root->data = data;
             return;
         }
